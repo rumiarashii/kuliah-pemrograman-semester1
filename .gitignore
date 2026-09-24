@@ -1,0 +1,9 @@
+*.exe
+*.pdf
+*.zip
+*.rar
+*.7z
+*.o
+*.obj
+.vscode/
+.idea/
