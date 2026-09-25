@@ -10,7 +10,7 @@ using std::locale;
 
 
 // menggunakan fungsi void untuk memanggil inputData pada main dengan menggunakan pass by reference (untuk mengubuah variabel pada scope lebih besar)
-void inputData(string &namakarakter, int &attackPoint, float &critRate, float &critDmg, char &classType){
+void inputData(string &namakarakter, int &attackPoint, int &level, float &critRate, float &critDmg, char &classType){
     
     // input utama untuk variabel
     cout << "\n-----------------------------------------------"  << endl;
@@ -21,6 +21,7 @@ void inputData(string &namakarakter, int &attackPoint, float &critRate, float &c
     cout << "Masukkan ATK               : "; cin >> attackPoint;
     cout << "Masukkan crit rate         : "; cin >> critRate;
     cout << "Masukkan crit DMG          : "; cin >> critDmg;
+    cout << "Masukkan Jumlah Level      : "; cin >> level;
     cout << "Masukkan tipe kelas        : "; cin >> classType;
 
     // mengubah huruf pada tipe kelas menjadi uppercase
@@ -76,9 +77,18 @@ bool bossKalah(int finalDamage){
     }
 }
 
+void levelMechanism (int &level){
+    for (int i = 1; i <= level; i++){
+        cout << "Sekarang berada di level - " << level;
+        
+    }
+}
+
 int main(){
     // set dan declare variable utama
     string namakarakter;
+
+    int level;
     
     int attackPoint;
     float critRate;
@@ -90,7 +100,7 @@ int main(){
     string namaClass;
 
     // pemanggilan fungsi input data dan output data
-    inputData(namakarakter, attackPoint, critRate, critDmg, classType);
+    inputData(namakarakter, attackPoint, level, critRate, critDmg, classType);
     outputData(namakarakter, attackPoint, classType, namaClass);
 
     // pemanggilan fungsi float untuk hitungCritDmg, dengan kita harus cout manual karena fungsi floar hanya return nilai float
