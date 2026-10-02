@@ -114,21 +114,29 @@ int main(){
     bool isTrue = true;
     int pilihan;
 
-    stokTokoKopi();
+    while (isTrue){
+        cout << "TUGAS ARRAY 1D DAN 2D" << endl;
+        cout << "1. Array 1D (Menggunakan array struct barang)" << endl;
+        cout << "2. Array 2D" << endl;
+        cout << "3. Keluar" << endl;
+        cout << "Masukkan pilihan mu: "; cin >> pilihan;
 
+        switch(pilihan){
+            case 1:
+                 arraySatuDimensi();
+                 break;
+            case 2:
+                 stokTokoKopi();
+                 break;
+            case 3:
+                cout << "Terimakasih sampai berjumpa kembali!" << endl;
+                isTrue = false;
+                break;
+            default:
+                cout << "INPUT SALAH!" << endl;
+                break;
 
-    // while (isTrue){
-    //     cout << "TUGAS ARRAY 1D DAN 2D" << endl;
-    //     cout << "1. Array 1D (Menggunakan array struct barang)" << endl;
-    //     cout << "2. Array 2D" << endl;
-    //     cout << "3. Keluar" << endl;
-    //     cout << "Masukkan pilihan mu: "; cin >> pilihan;
-
-    //     switch(pilihan){
-    //         case 1:
-    //              arraySatuDimensi();
-    //              break;
-    //     }
-    // }
+        }
+    }
     return 0;
 }

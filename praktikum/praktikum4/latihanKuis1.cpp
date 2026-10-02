@@ -219,7 +219,7 @@ void discountMember(){
 /*  Latihan 5: perulangan bersarang*/
 void cetakPiramidaSelangSeling(int n){
     for (int i = 1; i <= n; i++){
-        for (int j = i; j <= n; j++){
+        for (int j = 1; j <= n - i; j++){
             cout << " ";
         }
 
@@ -291,6 +291,7 @@ void fungsiRekursif(){
         cout << "Masukkan basis: "; cin >> basis;
         cout << "Masukkan eksponen: "; cin >> eksponen;
         cout << "Nilai basis " << basis << " dengan eksponen " << eksponen << pangkat(basis, eksponen) << endl;
+        break;
     default:
         cout << "Input tidak sesuai";
         break;
@@ -299,5 +300,5 @@ void fungsiRekursif(){
 
 
 int main(){
-    fungsiRekursif();
+    perulanganBersarang();
 }

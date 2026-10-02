@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 
+// waktu pengerjaan Selasa, 29 September 16:23 - 19:47 (commit and push to github at 23:51 WIB) 
 using std::cout;
 using std::endl;
 using std::cin;
@@ -125,7 +126,12 @@ void menu(bool &isTrue, int &pilihan){
                 } else {
                     cout << "Angka " << target << " tidak dapat ditemukan pada vector array" << endl;
                 }
+                break;
             }
+            default:
+                isTrue = false;
+                break;
+
 
         }
     }
