@@ -203,8 +203,7 @@ void patternGenaration(int n){
 
 
 // latihan 4
-void numberPyramid(int n){
-    
+void numberPyramid(int n){  
     for (int i = 0; i < n; i++){
         for (int j = 1; j <= n - i; j++){
             cout << j << " ";
@@ -212,7 +211,6 @@ void numberPyramid(int n){
 
         cout << endl;
     }
-
 
     for (int i = 1; i < n; i++){
         for (int j = 1; j <= i + 1; j++){
