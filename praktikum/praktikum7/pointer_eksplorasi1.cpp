@@ -30,7 +30,13 @@ int main(){
     cout << pC << '\n'; //bertambah 8 byte
 
 
-    int arr = {10, 20, 30};
+    // int arr = {10, 20, 30};
+
+    // char arrchar[3] = {'a', '\0', 'c'};
+    // cout << arrchar;
+
+    char ab='A';
+    cout<<&ab; // aturan dari arrchar
 
 
     return 0;

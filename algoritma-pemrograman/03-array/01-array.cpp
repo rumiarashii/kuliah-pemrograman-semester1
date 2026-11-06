@@ -10,6 +10,7 @@ using std::setprecision;
 using std::vector;
 
 // ARRAY SATU DIMENSI
+// array termasuk ke structure tapi dengan tipe yang sama yaitu char
 
 // maksimal untuk define sebuah typedef
 int contoh = 5;
